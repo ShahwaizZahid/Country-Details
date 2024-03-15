@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e63496ca66.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Country Details</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="heading">Where is the Country</div>
+        <div class="theme-conatiner">
+          <div><i class="fa-solid fa-moon"></i></div>
+          <div class="theme-heading">Dark Mode</div>
+        </div>
+      </header>
+      <section class="main-search-contaner">
+        <div class="search-Country">
+          <form class="form-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input placeholder="Search for a country" type="text" />
+          </form>
+
+          <div class="filter-region-container">
+            <div class="filter-region">
+              <div class="filter-region-heading">Filter-Regon</div>
+              <i class="fa-solid fa-arrow-down region-icon"></i>
+            </div>
+            <div class="options-container" data-options="">
+              <div tabindex="0" class="option" data-value="All">All</div>
+              <div tabindex="0" class="option" data-value="Africa">Africa</div>
+              <div tabindex="0" class="option" data-value="Americas">
+                Americas
+              </div>
+              <div tabindex="0" class="option" data-value="Europe">Europe</div>
+              <div tabindex="0" class="option" data-value="Asia">Asia</div>
+              <div tabindex="0" class="option" data-value="Oceania">
+                Oceania
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="countries">
+        <template class="template-card" data-country-card="">
+          <div class="country-card">
+            <div class="img-container">
+              <img
+                class="cards-img"
+                src="https://flagcdn.com/bn.svg"
+                data-flag=""
+              />
+            </div>
+            <div class="info">
+              <div class="name" data-name="">Brunei Darussalam</div>
+              <div class="points-wrapper">
+                <div class="info-point" data-population="">
+                  <div class="population-numbers">1ee2444221</div>
+                </div>
+                <div class="info-point" data-region="">
+                  <div class="region-name">Asia</div>
+                </div>
+                <div class="info-point" data-capital="">
+                  <div class="capital-name">islamaabad</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </section>
+    </div>
+
+    <div class="specfic-country-data-container">
+      <template class="template-specfic-country-data">
+        <div class="back-btn">
+          <i class="fa-solid fa-arrow-left" style="color: #ffffff"></i>
+          <div>Back</div>
+        </div>
+
+        <div style="display: flex; margin-top: 100px">
+          <div class="specfic-country-flag">
+            <img src="https://flagcdn.com/bn.svg" data-flag="" />
+          </div>
+          <div class="specfic-country-data">
+            <div class="country-details">
+              <div class="Details">
+                <div class="native-name">
+                  <div class="info-" data-native-name="">Native Name:</div>
+                  <div class="info-d country-native-name" data-native-name="">
+                    Pakistan
+                  </div>
+                </div>
+
+                <div class="region-Name">
+                  <div class="info-" data-region="">Region:</div>
+                  <div class="info-d Country-Region" data-region="">Asia</div>
+                </div>
+
+                <div class="sub-region-name">
+                  <div class="info-" data-sub-region="">Subregion:</div>
+                  <div class="info-d country-sub-region" data-sub-region="">
+                    Southern Asia
+                  </div>
+                </div>
+
+                <div class="capital-Name">
+                  <div class="info-" data-capital="">Capital:</div>
+                  <div class="info-d country-capital" data-capital="">
+                    Islamabad
+                  </div>
+                </div>
+
+                <div class="Area">
+                  <div class="info-">Area:</div>
+                  <div class="info-d country-area" data-top-level-domain="">
+                    Not Found
+                  </div>
+                </div>
+
+                <div class="cunnries-name">
+                  <div class="info-" data-currencies="">Cunnries:</div>
+                  <div
+                    class="info-d country-currencies"
+                    data-currencies=""
+                  ></div>
+                </div>
+
+                <div class="languages-name">
+                  <div class="info-" data-languages="">languages:</div>
+                  <div class="info-d country-languages" data-languages=""></div>
+                </div>
+
+                <div class="Population-count">
+                  <div class="info-" data-population="">Population:</div>
+                  <div class="info-d country-population" data-population="">
+                    200000944344
+                  </div>
+                </div>
+              </div>
+              <div class="bordes-country-container">
+                <div class="border-country-heading">Border Countries:</div>
+                <div class="border-country"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
