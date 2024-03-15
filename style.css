@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0%;
 }
+
 :root {
   --bg-light: #2b3945;
   --bg-dark: #202c37;
@@ -11,13 +12,15 @@
   --border-sha-col: #0000000d;
   --icon-col: white;
 }
+
 .search-icon,
 .region-icon {
   color: var(--icon-col);
 }
+
 .main-container {
   background: var(--bg-dark);
-  height: 100vh;
+  height: fit-content;
 }
 
 .header {

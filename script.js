@@ -136,6 +136,7 @@ AllCountryApi(0, 40);
 // function for show details of click card
 
 function setDetailsOfCard(data, selectCountry, templateNode) {
+
   const countryFlag = templateNode.querySelector(".specfic-country-flag img");
   const countryNativeName = templateNode.querySelector(".country-native-name");
   const countryRegion = templateNode.querySelector(".Country-Region");
@@ -222,6 +223,7 @@ function showBorderCountryDetail(data, selectedCountryData) {
 }
 
 input.addEventListener("input", function () {
+
   if (input.value === "") {
     // Remove the submit event listener
     searchForm.removeEventListener("submit", searchCountry);
@@ -232,6 +234,7 @@ input.addEventListener("input", function () {
     searchForm.addEventListener("click", searchCountry);
   }
 });
+
 //function for set input value
 function searchCountry(e) {
   e.preventDefault();
@@ -241,6 +244,7 @@ function searchCountry(e) {
 }
 
 function fetchSearchApi(country) {
+  
   const allCountriesApiUrl = `https://restcountries.com/v3.1/all`;
   const searchApiUrl = `https://restcountries.com/v3.1/name/${country}?fullText=true`;
 
